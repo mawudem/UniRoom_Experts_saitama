@@ -25,6 +25,11 @@ Le logiciel se présente sous la forme d'un utilitaire en ligne de commande et e
    - Possibilité de générer des fichiers au format ICalendar pour la planification des cours.
 
 ## Functionalities for facility managers
+### English
+   - Synoptic view of room occupancy rates.
+   - Ranking of rooms based on their seating capacity.
+   - Assistance in identifying overused and underused rooms for future adjustments.
+### FR-version
    - Visualisation synthétique du taux d'occupation des salles.
    - Classement des salles en fonction de leur capacité d'accueil.
    - Aide à l'identification des salles surexploitées et sous-exploitées en vue d'aménagements futurs.
