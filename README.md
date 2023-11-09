@@ -6,13 +6,19 @@
 This project was created by the team "Les Experts," consisting of Amine-jabote, sidqui_youssef, and Nico6003, as part of our studies at the University of Technology of Troyes. The objective of this software is to enable the university to manage its facilities more efficiently while facilitating the organization of its users, including teachers and students.
 
 The software is presented in the form of a command-line utility and is based on weekly class slots, with each room available in the CRU format (University Reservation Slot). It offers a set of features for different types of users.
-### (FR-version)
+### FR-version
 Ce projet a été créé par l'équipe "Les Experts" constitue de Amine-jabote, sidqui_youssef et Nico6003 Dans le cadre de nos études à l'université de Technologie de Troyes.L'objectif de ce logiciel est de permettre à l'université de gérer de manière plus efficace ses locaux tout en facilitant l'organisation de ses usagers, notamment les enseignants et les étudiants.
 
 Le logiciel se présente sous la forme d'un utilitaire en ligne de commande et est basé sur les créneaux de cours hebdomadaires, chaque salle étant disponible sous le format CRU (Créneau de Réservation Universitaire). Il offre un ensemble de fonctionnalités pour différents types d'utilisateurs.
 
 ## Functionalities for teachers and students
+### English
+   - Access to information about rooms and associated classes.
+   - Consultation of the room availability calendar.
+   - Verification of the maximum seating capacity of rooms.
+   - Ability to generate ICalendar format files for class scheduling.
 
+### FR-version
    - Accès aux informations sur les salles et les cours associés.
    - Consultation du calendrier de disponibilité des salles.
    - Vérification des capacités maximales en nombre de places des salles.
