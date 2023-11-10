@@ -10,10 +10,10 @@ class Session
         this.min_debut = min_debut; // min_debut est un entier compris entre 0 et 59
         this.min_fin = min_fin; // min_fin est un entier compris entre 0 et 59
         this.heure_fin = heure_fin; // heure_fin est un entier compris entre 0 et 23
-        this.salle_id = salle_id; // salle_id est un entier 
+        this.salle_id = salle_id; // salle_id est un string
         this.sommaire = sommaire;  // sommaire est un string
     }
-    // toString() permet d'afficher les informations de la session
+    // String() permet d'afficher les informations de la session
     String()
     {
         return (this.sommaire + " " + this.text_jour + " " + this.h_debut + ":" + this.min_debut + " " + this.heure_fin + ":" + this.min_fin + " " + this.nb_places + " " + this.salle_id);
@@ -23,7 +23,7 @@ class Session
     {
         return parseInt(this.num_jour);
     }
-    // get_heure() permet de retourner l'heure de début de la session
+    // get_debut() permet de retourner l'heure de début de la session
     get_debut()
     {
         return parseInt(this.h_debut) + parseInt(this.min_debut)/60;
@@ -38,7 +38,7 @@ class Session
     {
         return this.nb_places;
     }
-    // get_Salle() permet de retourner le numéro de la salle de la session
+    // get_Salle() permet de retourner l'id de la salle de la session
     get_Salle()
     {
         return this.salle_id;
