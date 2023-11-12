@@ -1,23 +1,46 @@
-class UE{
-    constructor(identifiant,listeSalle,listeSession){
-        this.identifiant=identifiant; //Identifiant de l'UE, string
-        this.listeSalle=listeSalle; //Liste des salles associées à l'identifiant de l'UE, tableau de Salle
-        this.listeSession=listeSession; //Liste des sessions de cours pour une ue, tableau de Session
+class UE {
+    constructor(identifiant, listeSalle, listeSession) {
+        this.identifiant = identifiant; //Identifiant de l'UE, string
+        this.listeSalle = listeSalle; //Liste des salles associées à l'identifiant de l'UE, tableau de Salle
+        this.listeSession = listeSession; //Liste des sessions de cours pour une ue, tableau de Session
     }
 
     //affiche les informations d'une UE
-    String(){
-        return ("UE : "+this.identifiant+", Salles : "+this.listeSalle+", Sessions : "+this.listeSession);
+    String() {
+        let salles;
+        let sessions;
+        this.listeSalle.forEach(element => {
+            salle += element + ", ";
+        });
+        this.listeSession.forEach(element => {
+            sessions += element + ", ";
+        });
+        return ("UE : " + this.identifiant + ",\nSalles : " + salles + ",\nSessions : " + sessions);
     }
 
     //Retourne l'identifiant d'une UE
-    getIdentifiant(){
+    getIdentifiant() {
         return this.identifiant;
     }
 
     //Retourne pour un identifiant donné la liste des salles associées à l'UE
-    getListeSalle(identifiant){
+    getListeSalle(identifiant) {
         return this.listeSalle;
+    }
+
+    //Retourne pour un identifiant donné la liste des sessions associées à l'UE
+    getListeSession(identifiant) {
+        return this.listeSession;
+    }
+
+    //Retourne le nombre de session pour une UE
+    getNumberOfSessions(identifiant) {
+        return this.listeSession.length;
+    }
+
+    //Retourne le nombre de salle pour une UE
+    getNumberOfSalles(identifiant) {
+        return this.listeSalle.length;
     }
 
 }
