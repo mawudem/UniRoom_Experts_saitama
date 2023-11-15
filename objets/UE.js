@@ -1,7 +1,6 @@
 class UE {
-    constructor(identifiant, listeSalle, listeSession) {
+    constructor(identifiant, listeSession) {
         this.identifiant = identifiant; //Identifiant de l'UE, string
-        this.listeSalle = listeSalle; //Liste des salles associées à l'identifiant de l'UE, tableau de Salle
         this.listeSession = listeSession; //Liste des sessions de cours pour une ue, tableau de Session
     }
 
@@ -11,28 +10,28 @@ class UE {
     }
 
     //Retourne l'identifiant d'une UE
-    getIdentifiant() {
+    get_identifiant() {
         return this.identifiant;
     }
 
     //Retourne pour un identifiant donné la liste des salles associées à l'UE
-    getListeSalle(identifiant) {
-        return this.listeSalle;
+    get_liste_Salle(identifiant) {
+       return this.listeSession.forEach(session => session.get_Salle())
     }
 
     //Retourne pour un identifiant donné la liste des sessions associées à l'UE
-    getListeSession(identifiant) {
+    get_liste_Session() {
         return this.listeSession;
     }
 
     //Retourne le nombre de session pour une UE
-    getNumberOfSessions(identifiant) {
+    get_nb_Sessions() {
         return this.listeSession.length;
     }
 
-    //Retourne le nombre de salle pour une UE
-    getNumberOfSalles(identifiant) {
-        return this.listeSalle.length;
-    }
+    
+
 
 }
+
+module.exports = UE;
