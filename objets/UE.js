@@ -15,8 +15,8 @@ class UE {
     }
 
     //Retourne pour un identifiant donné la liste des salles associées à l'UE
-    get_liste_Salle(identifiant) {
-       return this.listeSession.forEach(session => session.get_Salle())
+    get_Session(identifiant) {
+       return this.listeSession[identifiant];
     }
 
     //Retourne pour un identifiant donné la liste des sessions associées à l'UE
