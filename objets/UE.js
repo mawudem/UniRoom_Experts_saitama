@@ -7,15 +7,7 @@ class UE {
 
     //affiche les informations d'une UE
     String() {
-        let salles;
-        let sessions;
-        this.listeSalle.forEach(element => {
-            salle += element + ", ";
-        });
-        this.listeSession.forEach(element => {
-            sessions += element + ", ";
-        });
-        return ("UE : " + this.identifiant + ",\nSalles : " + salles + ",\nSessions : " + sessions);
+            this.listeSession.forEach(session => console.log(session.toString()));
     }
 
     //Retourne l'identifiant d'une UE
