@@ -1,9 +1,8 @@
 
 class Trisalle 
 { 
-    constructor (liste_salle)
+    constructor ()
     {
-        this.liste_salle = liste_salle;
     }
     //On veut afficher tous les objets de type salle triés d'une façon décroissante selon le nombre de places par salle.
         trier()
@@ -12,7 +11,7 @@ class Trisalle
             var temp, i, j, temp1;
             for (i = 1; i < len; i++) 
             {
-                temp = tab_capacite[i];
+                temp = parseInt(tab_capacite[i]);
                 temp1 = tab_salle[i];
                 j = i - 1;
                 while (parseInt(tab_capacite[j]) < temp && j >= 0) 
@@ -20,10 +19,9 @@ class Trisalle
                     tab_capacite[j + 1] = tab_capacite[j];
                     tab_salle[j + 1] = tab_salle[j];
                     j--;
+                }
                     tab_capacite[j + 1] = tmp;
                     tab_salle[j + 1] = temp1;
-
-                }
             }
             for (i = 0; i < len; i++) 
             {
