@@ -29,3 +29,4 @@ class Trisalle
             }
         }
 }
+module.exports = Trisalle;
