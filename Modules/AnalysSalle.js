@@ -18,16 +18,31 @@ class AnalysSalle {
 
     //verifie la disponiblite d'une salle pour un jour et une heure donnée
     is_disponible(salle, jour, heure) {
-        let libre = new Boolean(true);
-        if (salle.sessions[jour][i] != 0) {
-            libre = false;
+        let index = this.get_salle_index(salle);
+        if (index >= 0) {
+            let session = this.liste_salle[index].get_SessionHeure(jour, heure);
+            console.log(session.toString());
+            if (session === 0) {
+                console.log("La salle est libre");
+                return true;
+            } else {
+                let nom = session.toString();
+                console.log("La salle est occupée par ${nom}");
+                return false;
+            }
+        } else {
+            console.error("Pas de salle ${salle} dans la base de donnée");
         }
-        return libre;
     }
 
     //recupere la capacité de la salle
-    get_capacite(salle) {
-        return salle.getNbPlaces();
+    getCapacite(salle){
+        let index = this.get_salle_index(salle);
+        if (index >= 0) {
+             return this.liste_salle[index].getCapacite();
+        } else {
+            console.error("Pas de salle ${salle} dans la base de données");
+        }
     }
 }
 
