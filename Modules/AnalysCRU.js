@@ -133,4 +133,4 @@ class cruParser {
     }
 }
 
-module.exports = AnalyseCRU;
+module.exports = AnalysCRU;
