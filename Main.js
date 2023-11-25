@@ -30,7 +30,7 @@ let analyser = new AnalysCRU();
 
 //Fonction qui permet d'éliminer les doublons
 function elim__Doublon(article, position, liste) {
-    return liste.indexOf(item) === position;
+    return liste.indexOf(article) === position;
 }
 
 let Document_Cru = String;
