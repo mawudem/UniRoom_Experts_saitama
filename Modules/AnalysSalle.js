@@ -1,7 +1,7 @@
 class AnalysSalle {
 
     constructor(liste_salle){
-        this.liste_salle=liste_salle; //tableau de salles
+        this.liste_salle = liste_salle; //tableau de salles
     }
 
     //retourne l'index de la salle dans liste_salle
