@@ -36,7 +36,7 @@ function elim__Doublon(article, position, liste) {
 let Document_Cru = String;
 
 let importeur = new ImportCRU(); //Importer le document CRU
-Document_Cru = importeur.import(); //Importer le document CRU
+Document_Cru = importeur.Importation(); //Importer le document CRU
 let UEs = analyser.analyser(Document_Cru); //Analyser le document CRU
 UE_Liste = UE_Liste.concat(UEs); //Ajouter les UE dans la liste des UE
 let listeSalle = new Array(); //Créer un tableau de salles
