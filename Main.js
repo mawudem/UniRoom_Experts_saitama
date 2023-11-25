@@ -10,7 +10,7 @@ var Salle = require('./Objets/Salle');
 //Modules
 var AnalysSalle = require('./Modules/AnalysSalle');
 var iCal = require('./Modules/ExportiCal');
-var ImportCru = require('./Modules/ImportCRU');
+var ImportCRU = require('./Modules/ImportCRU');
 var RemplirSalle = require('./Modules/RemplissSalle');
 var AnalysCRU = require('./Modules/AnalysCRU');
 var Trisalle = require('./Modules/Trisalle');
@@ -35,7 +35,7 @@ function elim__Doublon(article, position, liste) {
 
 let Document_Cru = String;
 
-let importeur = new ImportCru(); //Importer le document CRU
+let importeur = new ImportCRU(); //Importer le document CRU
 Document_Cru = importeur.import(); //Importer le document CRU
 let UEs = analyser.analyser(Document_Cru); //Analyser le document CRU
 UE_Liste = UE_Liste.concat(UEs); //Ajouter les UE dans la liste des UE
