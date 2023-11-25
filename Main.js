@@ -246,7 +246,7 @@ function menu_Principal()
                 break;
             case "2":
                 let salle2 = prompt("Quelle salle ?");
-                console.log(R_A.getCapacity(salle2));
+                console.log(R_A.getNbPlaces(salle2));
                 break;
             case "3":
                 let salle3 = prompt("Quelle salle ?").toUpperCase();
