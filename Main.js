@@ -41,7 +41,7 @@ let UEs = analyser.analyse(Document_Cru); //Analyser le document CRU
 UE_Liste = UE_Liste.concat(UEs); //Ajouter les UE dans la liste des UE
 let listeSalle = new Array(); //Créer un tableau de salles
 let salles = new RemplirSalle(UE_Liste);  //Créer un tableau de salles
-listeSalle = salles.remplir(); //Remplir le tableau de salles
+listeSalle = salles.remplirSalles(); //Remplir le tableau de salles
 let R_A = new AnalysSalle(listeSalle); //Analyser les salles
 let calendrier = new iCal(UE_Liste); //Créer un calendrier iCal
 
