@@ -28,7 +28,6 @@ class ExportiCal
     }
 
     //Génération du iCalendar
-
     est_acceptable(heure_debut, minute_debut, heure_fin, minute_fin)
     {
         if ((heure_debut >= 8) && (heure_fin + (minute_fin / 60) <= 20)) //début et fin respectant les limites
@@ -40,7 +39,7 @@ class ExportiCal
         }
         return false;
     };
-
+     //Ajout d'un cours dans le calendrier
     Ajout_evenement(annee, mois, jour, heure_debut, minute_debut, heure_fin, minute_fin, titre, salle)
     {
         if (this.est_acceptable(heure_debut, minute_debut, heure_fin, minute_fin))
@@ -58,7 +57,7 @@ class ExportiCal
             console.error("Impossible Session Hours")
         }
     };
-
+    //Export du calendrier
     debut_exportation() 
     {
         let input = '';
@@ -81,6 +80,7 @@ class ExportiCal
                 console.log('Cours ajoutés à l\'exportation');
             }
         };
+        //Choix de la période d'export
         let debut_exportation_jour = prompt("Enter the begining date of the export period (format DD/MM/YYYY): ");
         let fin_exportation_jour = prompt("Enter the ending date of the export period (format DD/MM/YYYY): ");
         debut_exportation = debut_exportation_jour.split('/').filter((val) => !val.match('/'));
@@ -105,7 +105,7 @@ class ExportiCal
                 }
             }
         }
-
+        //Export du calendrier
         try 
         {
             this.cal.save('./export/timetable.ics');
