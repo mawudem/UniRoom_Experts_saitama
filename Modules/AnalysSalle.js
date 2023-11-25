@@ -1,14 +1,14 @@
 class AnalysSalle {
 
     constructor(roomliste){
-        this.roomliste = roomliste; //tableau de salles
+        this.roomliste = roomliste; // tableau de salles
     }
 
-    //retourne l'index de la salle dans liste_salle
+    // retourne l'index de la salle dans roomliste
     get_salle_index(loc) {
         let index = -1;
         for (let i = 0; i < this.roomliste.length; i++) {
-            if (this.roomList[i].getSalle() === loc){
+            if (this.roomliste[i].getSalle() === loc){
                 index = i;
                 break;
             }
