@@ -1,7 +1,7 @@
 var UE = require('../Objets/UE');
 var Session = require('../Objets/Session');
 
-class cruParser {
+class AnalysCRU {
     constructor() {
         this.UEList = new Array();
         this.fichier = '';
