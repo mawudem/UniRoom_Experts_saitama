@@ -142,7 +142,7 @@ function get_Occupation()
     let num_b = get_nb_car(Document_Cru, jour);
     for (let k = 0; k < num_b; k++)
     {
-        let début = Trouver(Document_Cru, jour, m);
+        let début = Trouver(Document_Cru, jour, k);
         colPosition.push(début);
         for (let i = 0; i < 30; i++)
         {
