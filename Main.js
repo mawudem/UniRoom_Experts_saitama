@@ -261,9 +261,12 @@ function menu_Principal()
                 let objet = get_Occupation();
                 const fs = require('fs');
                 fs.writeFile('data.json', objet, (err) =>
-                {
-                    if (err) throw err;
-                    console.log('The file has been saved!');
+                {   
+                    if (err)
+                    {
+                        return console.log(err);
+                    }
+                    console.log("\nJson pour Vega-lite a été generé.ouvre le html");
                 });
                 break;
             case "6":
