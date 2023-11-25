@@ -71,7 +71,7 @@ function lister_Salles() {
 
 function Trouver(str, car, num)
 {
-    var i = str.indexOf(cha);
+    var i = str.indexOf(car);
     for (var j = 0; j < num; j++)
     {
         i = str.indexOf(cha, i + 1);
@@ -214,7 +214,7 @@ function get_Occupation()
         {
             data[ptr] = {};
             data[ptr]['Salle'] = colNomSalle[i];
-            data[ptr]['Occupation'] = colOccupation[i] / parseInt(R_A.getCapacity(colNomSalle[i]));
+            data[ptr]['Occupation'] = colOccupation[i] / parseInt(R_A.getCapacite(colNomSalle[i]));
             ptr++;
         }
     }
