@@ -1,5 +1,5 @@
 var UE = require('../Objets/UE');
-var Session = require('../Objects/Session');
+var Session = require('../Objets/Session');
 
 class cruParser {
     constructor() {
