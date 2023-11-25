@@ -9,11 +9,14 @@ class RemplissSalle {
     // Parcourt la liste des Unités d'Enseignement (UE) et leurs sessions
     // Appelle la fonction Ajout_ToList pour ajouter les sessions à la liste des salles
     remplirSalles() {
-        this.liste_UE.forEach(UE => {
-            UE.get_liste_Session().forEach(session => {
+          this.UEList.forEach(UE => {
+            let sessions = UE.get_liste_Session();
+            sessions.forEach(session => {
+                //console.log(session.toString());
                 this.ajout_ToList(session);
-            });
+            })
         });
+        return this.liste_salle;
     }
 
     // Recherche l'index d'une salle dans la liste des salles en fonction de son emplacement
