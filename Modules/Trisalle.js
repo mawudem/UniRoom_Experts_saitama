@@ -5,7 +5,7 @@ class Trisalle
     {
     }
     //On veut afficher tous les objets de type salle triés d'une façon décroissante selon le nombre de places par salle.
-        trier()
+        trier(tab_capacite, tab_salle)
          {
             var len = tab_capacite.length;
             var temp, i, j, temp1;
