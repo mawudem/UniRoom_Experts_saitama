@@ -7,7 +7,7 @@ class AnalysSalle {
     //retourne l'index de la salle dans liste_salle
     get_salle_index(loc) {
         let index=-1;
-        for(let i=0; i<this.liste_salle.length();i++){
+        for(let i=0; i<this.liste_salle.length;i++){
             if(this.liste_salle[i].get_salle_index===loc){
                 index=i;
                 break;
