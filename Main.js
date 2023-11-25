@@ -39,9 +39,9 @@ let importeur = new ImportCRU(); //Importer le document CRU
 Document_Cru = importeur.Importation(); //Importer le document CRU
 let UEs = analyser.analyse(Document_Cru); //Analyser le document CRU
 UE_Liste = UE_Liste.concat(UEs); //Ajouter les UE dans la liste des UE
-let listeSalle = new Array(); //Créer un tableau de salles
+let list_salle = new Array(); //Créer un tableau de salles
 let salles = new RemplirSalle(UE_Liste);  //Créer un tableau de salles
-listeSalle = salles.remplirSalles(); //Remplir le tableau de salles
+liste_salle = salles.remplirSalles(); //Remplir le tableau de salles
 let R_A = new AnalysSalle(liste_salle); //Analyser les salles
 let calendrier = new iCal(UE_Liste); //Créer un calendrier iCal
 
@@ -272,7 +272,7 @@ function menu_Principal()
             case "6":
                 let Tab_capacite = new Array(); //le tableau de capacité d'accueil maximale des salles de classe(SPEC4)
                 let salles_Par_Ordre_De_Capacite = new Array();
-                listeSalle.forEach(salle =>
+                liste_salle.forEach(salle =>
                 {
                     Tab_capacite.push(salle.getCapacity())
                     salles_Par_Ordre_De_Capacite.push(salle.getLocation());
