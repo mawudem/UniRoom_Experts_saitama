@@ -276,7 +276,7 @@ function menu_Principal()
                 liste_salle.forEach(salle =>
                 {
                     Tab_capacite.push(salle.getCapacity())
-                    salles_Par_Ordre_De_Capacite.push(salle.getLocation());
+                    salles_Par_Ordre_De_Capacite.push(salle.getSalle());
                 });
                 orderClass.trier(Tab_capacite, salles_Par_Ordre_De_Capacite);
                 break;
