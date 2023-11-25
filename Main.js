@@ -246,14 +246,6 @@ function menu_Principal()
                 lister_Salles();
                 break;
             case "2":
-                let importeur = new ImportCRU(); //Importer le document CRU
-                Document_Cru = importeur.Importation(); //Importer le document CRU
-                let UEs = analyser.analyse(Document_Cru); //Analyser le document CRU
-                UE_Liste = UE_Liste.concat(UEs); //Ajouter les UE dans la liste des UE
-
-                let list_salle = new Array(); //Créer un tableau de salles
-                let salles = new RemplirSalle(UE_Liste);  //Créer un tableau de salles
-                list_salle = salles.remplirSalles();
                 let salle2 = prompt("Quelle salle ?");
                 console.log(R_A.getCapacite(salle2));
                 break;
