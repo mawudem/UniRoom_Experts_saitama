@@ -13,7 +13,8 @@ class cruParser {
         nouveau_fichier = nouveau_fichier.trim();
         return nouveau_fichier; 
     }
-
+    
+    //Recupération données du cours
     trouverCours(cours)
     {
         if (fichier.search(cours) >= 0)
@@ -34,6 +35,7 @@ class cruParser {
         }
     }
 
+    //Récupération du type de cours
     resumeCours(premier_char)
     {
         switch (premier_char)
@@ -52,7 +54,7 @@ class cruParser {
                 break;
         }
     }
-
+    //Récupération du jour de cours
     jour_cours(premier_char)
     {
         switch (premier_char)
@@ -83,7 +85,7 @@ class cruParser {
                 break;
         }
     }
-
+    //Récupération des données d'une session
     analyse_session(namr, cours_info)
     {
         let temps = crenau_info[3].split(/:|-/).filter((val) => !val.match(/:|-/));
@@ -101,7 +103,7 @@ class cruParser {
         return new Session(resume, capacite, nb_jour, txt_jour, heure_debut, min_debut, heure_fin, min_fin, salle);
     }
 
-
+    //Récupération des données d'une UE
     analyse(Str_CRU)
     {
         this.fichier = this.trm(Str_CRU);

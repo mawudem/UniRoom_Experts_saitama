@@ -1,16 +1,18 @@
+//importation des fichiers
 const {readFileSync, promises: fsPromises} = require('fs');
 const prompt = require('prompt-sync')({sigint: true});
 class ImportCRU 
 {
+    //Lecture des fichiers
     readFile(nom_file) {
         return readFileSync(nom_file, 'utf-8');
     }
-
+    //Importation des fichiers cru
     Importation() 
     {
         const choix_importation = prompt("Quel fichier voulez-vous importer ? 1. les fichiers PGC par défaut 2. vos propres fichiers   ");
         let CRU_document = new String();
-        
+        //Importation des fichiers PGC
         switch (choix_importation)
         {
             case "1":
@@ -26,6 +28,7 @@ class ImportCRU
                 CRU_document += this.readFile('./SujetA_data/ST/edt.cru');
                 console.log("Fichiers PGC importés.");
                 break;
+            //Importation des fichiers personnels
             case "2":
                 let fin_importation = false;
                 while (fin_importation == false)
@@ -43,7 +46,7 @@ class ImportCRU
                 console.log("Mauvaise entrée. Veuillez recommencer.");
                 break;
         }
-        return CRU_document;
+        return CRU_document; //return the cru file
     }
 }
 
