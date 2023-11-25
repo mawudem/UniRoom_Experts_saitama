@@ -1,7 +1,7 @@
 const Salle = require('../objets/Salle');
 
 class RemplissSalle {
-    constructor(liste_salle) {
+    constructor(liste_UE) {
         this.liste_salle = new Array(); // liste_salle est un tableau de Salle
         this.liste_UE = liste_UE;
     }
