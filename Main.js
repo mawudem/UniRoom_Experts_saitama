@@ -37,8 +37,8 @@ let Document_Cru = String;
 
 let importeur = new ImportCru(); //Importer le document CRU
 Document_Cru = importeur.import(); //Importer le document CRU
-let UE = analyser.analyser(Document_Cru); //Analyser le document CRU
-UE_Liste = UE_Liste.concat(UE); //Ajouter les UE dans la liste des UE
+let UEs = analyser.analyser(Document_Cru); //Analyser le document CRU
+UE_Liste = UE_Liste.concat(UEs); //Ajouter les UE dans la liste des UE
 let listeSalle = new Array(); //Créer un tableau de salles
 let salles = new RemplirSalle(UE_Liste);  //Créer un tableau de salles
 listeSalle = salles.remplir(); //Remplir le tableau de salles
