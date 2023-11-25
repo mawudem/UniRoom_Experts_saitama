@@ -23,7 +23,7 @@ class Trisalle
                     tab_capacite[j + 1] = tmp;
                     tab_salle[j + 1] = temp1;
             }
-            for (i = 0; i < len; i++) 
+            for (i = 0; i < tab_capacite.length; i++) 
             {
                 console.log(tab_salle[i] + " " + tab_capacite[i]);
             }
