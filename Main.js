@@ -275,7 +275,7 @@ function menu_Principal()
                 let salles_Par_Ordre_De_Capacite = new Array();
                 liste_salle.forEach(salle =>
                 {
-                    Tab_capacite.push(salle.getCapacity())
+                    Tab_capacite.push(salle.getNbPlaces())
                     salles_Par_Ordre_De_Capacite.push(salle.getSalle());
                 });
                 orderClass.trier(Tab_capacite, salles_Par_Ordre_De_Capacite);
