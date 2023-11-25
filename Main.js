@@ -278,7 +278,7 @@ function menu_Principal()
                     Tab_capacite.push(salle.getCapacity())
                     salles_Par_Ordre_De_Capacite.push(salle.getLocation());
                 });
-                orderClass.voirSallesClassees(Tab_capacite, salles_Par_Ordre_De_Capacite);
+                orderClass.trier(Tab_capacite, salles_Par_Ordre_De_Capacite);
                 break;
             case "0":
                 run = false;
