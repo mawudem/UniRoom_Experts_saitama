@@ -27,6 +27,7 @@ class Trisalle
                     tab_capacite[j + 1] = tmp;
                     tab_salle[j + 1] = temp1;
             }
+             //On affiche le tableau tab_salle et tab_capacite triés
             for (i = 0; i < tab_capacite.length; i++) 
             {
                 console.log(tab_salle[i] + " " + tab_capacite[i]);
