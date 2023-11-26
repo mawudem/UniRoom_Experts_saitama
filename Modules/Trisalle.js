@@ -16,6 +16,7 @@ class Trisalle
                 temp = parseInt(tab_capacite[i]);
                 temp1 = tab_salle[i];
                 j = i - 1;
+                //On va comparer chaque élément du tableau avec les éléments qui le précèdent
                 while (parseInt(tab_capacite[j]) < temp && j >= 0) 
                 {
                     tab_capacite[j + 1] = tab_capacite[j];
