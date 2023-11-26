@@ -10,6 +10,7 @@ class Trisalle
          {
             var len = tab_capacite.length;
             var temp, i, j, temp1;
+             //On va utiliser l'algorithme de tri par insertion
             for (i = 1; i < len; i++) 
             {
                 temp = parseInt(tab_capacite[i]);
