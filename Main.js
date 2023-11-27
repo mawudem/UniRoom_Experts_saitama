@@ -3,9 +3,9 @@
 //GROUPE : LES EXPERTS
 
 //Objets
-var UE = require('./Objets/UE');
-var Session = require('./Objets/Session');
-var Salle = require('./Objets/Salle');
+var UE = require('./objets/UE');
+var Session = require('./objets/Session');
+var Salle = require('./objets/Salle');
 
 //Modules
 var AnalysSalle = require('./Modules/AnalysSalle');
