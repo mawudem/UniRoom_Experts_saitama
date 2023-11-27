@@ -38,15 +38,15 @@ class RemplissSalle {
     ajout_ToList(session) {
         const salleIndex = this.trouverIndexSalle(session.get_Salle());
 
-        if (salleIndex !== -1) {
-            // La salle existe déjà, mise à jour de la capacité
-            this.liste_salle[salleIndex].setNbPlaces(session.get_NbPlaces());
-            this.liste_salle[salleIndex].Ajout_session(session);
-        } else {
+         if (salleIndex === -1) {
             // La salle n'existe pas, création d'une nouvelle salle
             const nouvelleSalle = new Salle(session.get_Salle(), session.get_NbPlaces());
             nouvelleSalle.Ajout_session(session);
             this.liste_salle.push(nouvelleSalle);
+        } else {
+            // La salle existe déjà, mise à jour de la capacité
+            this.liste_salle[salleIndex].setNbPlaces(session.get_NbPlaces());
+            this.liste_salle[salleIndex].Ajout_session(session);
         }
     }
 }
