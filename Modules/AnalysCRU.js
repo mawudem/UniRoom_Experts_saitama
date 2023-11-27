@@ -86,7 +86,7 @@ class AnalysCRU {
         }
     }
     //Récupération des données d'une session
-    analyse_session(namr, cours_info)
+    analyse_session(name, cours_info)
     {
         let temps = crenau_info[3].split(/:|-/).filter((val) => !val.match(/:|-/));
         let heure_debut = temps[0].slice(4);
