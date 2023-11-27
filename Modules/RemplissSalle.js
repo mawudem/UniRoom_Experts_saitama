@@ -22,7 +22,7 @@ class RemplissSalle {
     // Recherche l'index d'une salle dans la liste des salles en fonction de son emplacement
     // Retourne -1 si la salle n'est pas trouvée
     trouverIndexSalle(emplacement) {
-        console.log(liste_salle.length());
+        console.log(liste_salle.length);
         let ind = -1;
         for (let i = 0; i < this.liste_salle.length; i++) {
             if (this.liste_salle[i].getSalle() === emplacement) {
