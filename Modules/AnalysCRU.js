@@ -10,7 +10,7 @@ class AnalysCRU {
     {
         let nouveau_fichier = txt.replaceAll(/MA/ig, 'A'); //reformartage : remplacement des ME et MA par E et A pour qu'un jour ne soit qu'un seul caractère
         nouveau_fichier = nouveau_fichier.replaceAll(/ME/ig, 'E'); //reformartage : remplacement des ME et MA par E et A pour qu'un jour ne soit qu'un seul caractère
-        nouveau_fichier = nouveau_fichier.trim();
+        nouveau_fichier = nouveau_fichier.trm();
         return nouveau_fichier; 
     }
     
