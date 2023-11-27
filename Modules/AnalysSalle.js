@@ -30,11 +30,11 @@ class AnalysSalle {
                 return true;
             } else {
                 let nom = session.toString();
-                console.log("La salle est occupée par ${nom}");
+                console.log(`La salle est occupée par ${nom}`);
                 return false;
             }
         } else {
-            console.error("Pas de salle ${salle} dans la base de donnée");
+            console.error(`Pas de salle ${salle} dans la base de donnée`);
         }
     }
 
@@ -44,7 +44,7 @@ class AnalysSalle {
         if (index >= 0) {
              return this.liste_salle[index].getCapacite();
         } else {
-            console.error("Pas de salle ${salle} dans la base de données");
+            console.error(`Pas de salle ${salle} dans la base de données`);
         }
     }
 }
