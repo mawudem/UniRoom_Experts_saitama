@@ -11,7 +11,7 @@ var Salle = require('./Objets/Salle');
 var AnalysSalle = require('./Modules/AnalysSalle');
 var iCal = require('./Modules/ExportiCal');
 var ImportCRU = require('./Modules/ImportCRU');
-var RemplirSalle = require('./Modules/RemplissSalle');
+var RemplissSalle = require('./Modules/RemplissSalle');
 var AnalysCRU = require('./Modules/AnalysCRU');
 var Trisalle = require('./Modules/Trisalle');
 
