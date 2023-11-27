@@ -14,6 +14,7 @@ class ExportiCal
     //trouve le cours dans la liste des UE
     trouver_cours_dliste(nom)
     {
+        console.log(UE_Liste);
         let i = 0;
         while (this.UE_Liste[i].get_identifiant() != nom)
         {
