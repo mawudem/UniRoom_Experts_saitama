@@ -40,7 +40,7 @@ Document_Cru = importeur.Importation(); //Importer le document CRU
 let UEs = analyser.analyse(Document_Cru); //Analyser le document CRU
 UE_Liste = UE_Liste.concat(UEs); //Ajouter les UE dans la liste des UE
 let liste_salle = new Array(); //Créer un tableau de salles
-let salles = new RemplirSalle(UE_Liste);  //Créer un tableau de salles
+let salles = new RemplissSalle(UE_Liste);  //Créer un tableau de salles
 liste_salle = salles.remplirSalles(); //Remplir le tableau de salles
 console.log('list_salle:', liste_salle);
 let R_A = new AnalysSalle(liste_salle); //Analyser les salles
