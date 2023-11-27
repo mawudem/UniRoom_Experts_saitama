@@ -256,7 +256,7 @@ function menu_Principal()
                 R_A.is_disponible(salle3, jour, heure);
                 break;
             case "4":
-                calendrier.export();
+                calendrier.debut_exportation();
                 break;
             case "5":
                 let objet = get_Occupation();
