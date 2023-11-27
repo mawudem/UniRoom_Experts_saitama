@@ -35,6 +35,7 @@ class ImportCRU
                 {
                     const emplacement_fichier = prompt("Quel est l'emplacement du fichier ? e.g. ./SujetA_data/ST/edt.cru   ");
                     CRU_document += this.readFile(emplacement_fichier);
+                    console.log(`Content of ${emplacement_fichier}:\n`, fileContent);
                     const demande_fin_importation = prompt("Est-ce que c'est tout les fichiers dont vous avez besoin ? 1. Oui 2. Non   ");
                     if (demande_fin_importation == 1)
                     {
