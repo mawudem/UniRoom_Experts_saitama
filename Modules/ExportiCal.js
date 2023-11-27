@@ -15,7 +15,7 @@ class ExportiCal
     trouver_cours_dliste(nom)
     {
         let i = 0;
-        while (this.UE_Liste[i].getNom() != nom)
+        while (this.UE_Liste[i].get_identifiant() != nom)
         {
             i++;
             if (i > this.UE_Liste.length)
