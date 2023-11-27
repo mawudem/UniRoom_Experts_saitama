@@ -1,4 +1,3 @@
-var salle = require('../objets/Salle');
 class AnalysSalle {
 
     constructor(liste_salle){
