@@ -41,7 +41,7 @@ class AnalysSalle {
     getCapacite(salle){
         let index = this.get_salle_index(salle);
         if (index >= 0) {
-             return this.liste_salle[index].getCapacite();
+             return this.liste_salle[index].getNbPlaces();
         } else {
             console.error(`Pas de salle ${salle} dans la base de données`);
         }
