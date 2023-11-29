@@ -84,9 +84,9 @@ class ExportiCal
         //Choix de la période d'export
         let debut_exportation_jour = prompt("Enter the begining date of the export period (format DD/MM/YYYY): ");
         let fin_exportation_jour = prompt("Enter the ending date of the export period (format DD/MM/YYYY): ");
-        debut_exportation = debut_exportation_jour.split('/').filter((val) => !val.match('/'));
-        fin_exportation = fin_exportation_jour.split('/').filter((val) => !val.match('/'));
-        let nb_jours_exportation = (fin_exportation.getTime() - debut_exportation.get()) / (1000 * 3600 *24);
+        debut_exportation_jour = debut_exportation_jour.split('/').filter((val) => !val.match('/'));
+        fin_exportation_jour = fin_exportation_jour.split('/').filter((val) => !val.match('/'));
+        let nb_jours_exportation = (fin_exportation_jour.getTime() - debut_exportation_jour.get()) / (1000 * 3600 *24);
         this.cam.prodId(
             {
                 company: 'iCalendar',
@@ -95,7 +95,7 @@ class ExportiCal
             });
         for (let i = 0; i < nb_jours_exportation; i++)
         {
-            let jour = new Date(debut_exportation.getFullYear(), debut_exportation.getMonth(), (debut_exportation.getDate() + i), 0, 0);
+            let jour = new Date(debut_exportation_jour.getFullYear(), debut_exportation_jour.getMonth(), (debut_exportation_jour.getDate() + i), 0, 0);
             let cours_du_jour = this.cours_a_exporter.filter((cours) => (cours.getDay() === jour.getDay()));
             if (cours_du_jour.length > 0)
             {
