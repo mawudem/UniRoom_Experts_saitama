@@ -107,8 +107,8 @@ class AnalysCRU {
     analyse(Str_CRU)
     {
         this.fichier = this.trm(Str_CRU);
-        let regex = new RegExp(/\+\w+(\n|\r)|(1,\w\d,\P\=\d+,\H\=[A-Z]\s\d{1,2}:\d{1,2}-\d{1,2}:\d{1,2},\F\d,\S\=(\w)+\/\/(\n|\r))+/, 'g');
         let tableau_texte = new Array();
+        let regex = new RegExp(/\+\w+(\n|\r)|(1,\w\d,\P\=\d+,\H\=[A-Z]\s\d{1,2}:\d{1,2}-\d{1,2}:\d{1,2},\F\d,\S\=(\w)+\/\/(\n|\r))+/, 'g');
         tableau_texte = this.fichier.match(regex);
         let UE_name = '';
         for (let i = 0; i < tableau_texte; i++)
