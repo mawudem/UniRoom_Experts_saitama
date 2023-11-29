@@ -74,7 +74,7 @@ function Trouver(str, car, num)
     var i = str.indexOf(car);
     for (var j = 0; j < num; j++)
     {
-        i = str.indexOf(cha, i + 1);
+        i = str.indexOf(car, i + 1);
     }
     return i;
 }
