@@ -205,7 +205,7 @@ function get_Occupation()
     }
 
     let data = {};
-    var inp = propmt("Veuillez saisir une heure telle que 10h00    ");
+    var inp = prompt("Veuillez saisir une heure telle que 10h00    ");
     let inp2 = get_Temps(inp);
     let ptr = 0;
     for (let i = 0; i < length; i++)
