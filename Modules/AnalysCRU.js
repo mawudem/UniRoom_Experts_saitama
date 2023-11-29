@@ -1,5 +1,5 @@
 var UE = require('../objets/UE');
-var Session = require('../Objets/Session');
+var Session = require('../objets/Session');
 
 class AnalysCRU {
     constructor() {
