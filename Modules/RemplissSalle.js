@@ -1,4 +1,6 @@
 const Salle = require('../objets/Salle');
+const UE = require('../objets/UE');
+
 
 class RemplissSalle {
     constructor(liste_UE) {
