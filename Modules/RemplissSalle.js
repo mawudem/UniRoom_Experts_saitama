@@ -12,7 +12,7 @@ class RemplissSalle {
     // Appelle la fonction Ajout_ToList pour ajouter les sessions à la liste des salles
     remplirSalles() {
           this.liste_UE.forEach(UE => {
-            console.log(liste_UE);
+            console.log(this.liste_UE);
             let sessions = UE.get_liste_Session();
             sessions.forEach(session => {
                 //console.log(session.toString());
@@ -25,7 +25,7 @@ class RemplissSalle {
     // Recherche l'index d'une salle dans la liste des salles en fonction de son emplacement
     // Retourne -1 si la salle n'est pas trouvée
     trouverIndexSalle(emplacement) {
-        console.log(liste_salle.length);
+        console.log(this.liste_UE);
         let ind = -1;
         for (let i = 0; i < this.liste_salle.length; i++) {
             if (this.liste_salle[i].getSalle() === emplacement) {
