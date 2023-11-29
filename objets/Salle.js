@@ -49,7 +49,7 @@ class Salle
     //L'ajout d'une session à la liste des sessions planifiées pour une salle, à condition que la salle soit libre pendant la plage horaire spécifiée
     Ajout_session(session)
     {
-        let jour = session.get_jour();d
+        let jour = session.get_jour();
         let debut = this.heuresToIndex(session.get_debut());
         let fin = this.heuresToIndex(session.get_fin())-1; 
         if (this.is_libre(jour, debut, fin))
