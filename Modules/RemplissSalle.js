@@ -10,6 +10,7 @@ class RemplissSalle {
     // Appelle la fonction Ajout_ToList pour ajouter les sessions à la liste des salles
     remplirSalles() {
           this.liste_UE.forEach(UE => {
+            console.log(liste_UE);
             let sessions = UE.get_liste_Session();
             sessions.forEach(session => {
                 //console.log(session.toString());
