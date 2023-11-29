@@ -86,7 +86,7 @@ class ExportiCal
         let fin_exportation_jour = prompt("Enter the ending date of the export period (format DD/MM/YYYY): ");
         debut_exportation_jour = debut_exportation_jour.split('/').filter((val) => !val.match('/'));
         fin_exportation_jour = fin_exportation_jour.split('/').filter((val) => !val.match('/'));
-        let nb_jours_exportation = (fin_exportation_jour.getTime() - debut_exportation_jour.get()) / (1000 * 3600 *24);
+        let nb_jours_exportation = (fin_exportation_jour.get_Temps() - debut_exportation_jour.get_Temps()) / (1000 * 3600 *24);
         this.cam.prodId(
             {
                 company: 'iCalendar',
