@@ -75,7 +75,7 @@ class ExportiCal
                 {
                     if (typeof (parseInt(input[i])) === "number")
                     {
-                        this.cours_a_exporter.push(currentUE.getSession(parseInt(input[i]) - 1));
+                        this.cours_a_exporter.push(currentUE.get_Session(parseInt(input[i]) - 1));
                     }
                 }
                 console.log('Cours ajoutés à l\'exportation');
