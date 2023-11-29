@@ -100,7 +100,7 @@ class AnalysCRU {
         let capacite = crenau_info[2].slice(2);
         let nb_jour = this.jour_cours(crenau_info[3].charAt(2)).charAt(0);
         let txt_jour = this.jour_cours(crenau_info[3].charAt(2)).slice(1);
-        return new Session(resume, capacite, nb_jour, txt_jour, heure_debut, min_debut, heure_fin, min_fin, salle);
+        return new Session(capacite, nb_jour, txt_jour, heure_debut, min_debut, min_fin,heure_fin, salle, resume);
     }
 
     //Récupération des données d'une UE
