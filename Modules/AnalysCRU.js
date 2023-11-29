@@ -111,7 +111,7 @@ class AnalysCRU {
         let regex = new RegExp(/\+\w+(\n|\r)|(1,\w\d,\P\=\d+,\H\=[A-Z]\s\d{1,2}:\d{1,2}-\d{1,2}:\d{1,2},\F\d,\S\=(\w)+\/\/(\n|\r))+/, 'g');
         tableau_texte = this.fichier.match(regex);
         let UE_name = '';
-        for (let i = 0; i < tableau_texte; i++)
+        for (let i = 0; i < tableau_texte.length; i++)
         {
             if (tableau_texte[i].search(/\+\w+(\n|\r)/) === 0 )
             {
