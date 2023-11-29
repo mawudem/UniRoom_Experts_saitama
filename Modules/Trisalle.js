@@ -24,7 +24,7 @@ class Trisalle
                     j--;
                 }
                 //On va insérer l'élément dans la bonne position
-                    tab_capacite[j + 1] = tmp;
+                    tab_capacite[j + 1] = temp;
                     tab_salle[j + 1] = temp1;
             }
              //On affiche le tableau tab_salle et tab_capacite triés
