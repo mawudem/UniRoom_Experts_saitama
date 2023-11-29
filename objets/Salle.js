@@ -50,8 +50,8 @@ class Salle
     Ajout_session(session)
     {
         let jour = session.get_jour();
-        let debut = this.heuresToIndex(session.get_debut());
-        let fin = this.heuresToIndex(session.get_fin())-1; 
+        let debut = this.heures_a_Indice(session.get_debut());
+        let fin = this.heures_a_Indice(session.get_fin())-1; 
         if (this.is_libre(jour, debut, fin))
         {
             for (let i = debut ; i < fin; i++)
@@ -68,7 +68,7 @@ class Salle
     //retourne la session planifiée pour un jour (jour) et une heure (heure) elle utilise la fonction get_SessionIndice.
     get_SessionHeure(jour, heure)
     {
-        return this.sessions[jour][this.heuresToIndex(heure)];
+        return this.sessions[jour][this.heures_a_Indice(heure)];
     }
     //convertit une heure (h) en un indice qui représente l’heure dans le tableau this.session l’indice est calculé en multiplianrt l’heure par 2 et en sostrayant 16 mais il y a une limite de 24h (de0 à 24) et la fonction renvoie -1 si l’heure est en dehors de cette plage.
     heures_a_Indice(heure)
