@@ -96,7 +96,7 @@ class AnalysCRU {
         let heure_fin = temps[2];
         let min_fin = temps[3];
         let salle = crenau_info[5].slice(2);
-        let resume = name + this.resumeCourse(crenau_info[1].charAt(0));
+        let resume = name + this.resumeCours(crenau_info[1].charAt(0));
         let capacite = crenau_info[2].slice(2);
         let nb_jour = this.jour_cours(crenau_info[3].charAt(2)).charAt(0);
         let txt_jour = this.jour_cours(crenau_info[3].charAt(2)).slice(1);
