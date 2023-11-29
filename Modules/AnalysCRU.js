@@ -88,14 +88,14 @@ class AnalysCRU {
     //Récupération des données d'une session
     analyse_session(name, cours_info)
     {
+        let crenau_info = cours_info.slice(0, cours_info.indexOf('//'));
+        crenau_info = crenau_info.split(/,/).filter((val) => !val.match(/,/));
         let temps = crenau_info[3].split(/:|-/).filter((val) => !val.match(/:|-/));
         let heure_debut = temps[0].slice(4);
         let min_debut = temps[1];
         let heure_fin = temps[2];
         let min_fin = temps[3];
         let salle = crenau_info[5].slice(2);
-        let crenau_info = cours_info.slice(0, cours_info.indexOf('//'));
-        crenau_info = crenau_info.split(/,/).filter((val) => !val.match(/,/));
         let resume = name + this.resumeCourse(crenau_info[1].charAt(0));
         let capacite = crenau_info[2].slice(2);
         let nb_jour = this.jour_cours(crenau_info[3].charAt(2)).charAt(0);
