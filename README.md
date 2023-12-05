@@ -3,7 +3,7 @@
 ## Description
 
 ### English-version
-This project was created by the team "Les Experts," consisting of Amine-jabote, sidqui_youssef, and Nico6003, as part of our studies at the University of Technology of Troyes. The objective of this software is to enable the university to manage its facilities more efficiently while facilitating the organization of its users, including teachers and students.
+This project was created by the team "Les Experts," consisting of Amine-jabote, sidqui_youssef,Mohaaz45 and Nico6003, as part of our studies at the University of Technology of Troyes. The objective of this software is to enable the university to manage its facilities more efficiently while facilitating the organization of its users, including teachers and students.
 
 The software is presented in the form of a command-line utility and is based on weekly class slots, with each room available in the CRU format (University Reservation Slot). It offers a set of features for different types of users.
 ### FR-version
