@@ -29,7 +29,7 @@ Le logiciel se présente sous la forme d'un invite de commande et ce dernier est
    - Synoptic view of room occupancy rates.
    - Ranking of rooms based on their seating capacity.
    - Assistance in identifying overused and underused rooms for future adjustments.
-   - 
+
 ### French-version
    - Visualisation synthétique du taux d'occupation des salles.
    - Classement des salles en fonction de leur capacité d'accueil en places.
