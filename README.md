@@ -49,6 +49,7 @@ Le logiciel se présente sous la forme d'un invite de commande et ce dernier est
 To run this program, you simply need to download the right ZIP file in the release section, according to your operating system. Then, you need to extract the ZIP file, and run the executable file.
 
 ### French-version
+Pour exécuter ce programme, vous devez simplement télécharger le bon fichier ZIP dans la section des versions, en fonction de votre système d’exploitation. Ensuite, vous devez extraire le fichier ZIP et exécuter le fichier exécutable.
 
 ## Issues
 ### English-version
