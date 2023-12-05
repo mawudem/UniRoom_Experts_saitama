@@ -7,9 +7,9 @@ This project was created by the team "Les Experts," consisting of Amine-jabote, 
 
 The software is presented in the form of a command-line utility and is based on weekly class slots, with each room available in the CRU format (University Reservation Slot). It offers a set of features for different types of users.
 ### French-version
-Ce projet a été créé par l'équipe "Les Experts" constitue de Amine-jabote, sidqui_youssef, Mohaaz45 et Nico6003 Dans le cadre de nos études à l'université de Technologie de Troyes. L'objectif de ce logiciel est de permettre à l'université de gérer de manière plus efficace ses locaux tout en facilitant l'organisation de ses usagers, notamment les enseignants et les étudiants.
+Ce projet a été créé par l'équipe "Les Experts" constitué de Amine-jabote, sidqui_youssef, Mohaaz45 et Nico6003 Dans le cadre de nos études à l'université de Technologie de Troyes. L'objectif de ce logiciel est de permettre à l'université de gérer de manière plus efficace ses locaux tout en facilitant l'organisation de son personnel, notamment les enseignants et les étudiants.
 
-Le logiciel se présente sous la forme d'un invite de commande et est basé sur les créneaux de cours hebdomadaires, chaque salle étant disponible sous le format CRU (Créneau de Réservation Universitaire). Il offre un ensemble de fonctionnalités pour différents types d'utilisateurs.
+Le logiciel se présente sous la forme d'un invite de commande et est basé sur les créneaux de cours hebdomadaires, chaque salle étant disponible sous le format CRU (Créneau de Réservation Universitaire). Il offre un ensemble de fonctionnalités adaptées pour chaque type d'utilisateurs.
 
 ## Functionalities for teachers and students
 ### English
