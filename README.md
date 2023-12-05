@@ -56,4 +56,5 @@ Pour exécuter ce programme, vous devez simplement télécharger le bon fichier 
 If you encounter any issues, let us know by creating an issue on GitHub.
 
 ### French-version
+Si vous rencontrez des problèmes, faites-le nous savoir en créant un problème sur GitHub.
     
