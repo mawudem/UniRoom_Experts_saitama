@@ -37,10 +37,10 @@ Le logiciel se présente sous la forme d'un invite de commande et ce dernier est
      
 ## Technologies used
 ### English-version
-   -We are using Javascript.
+   We are using Javascript.
 
 ### French-version
-   -Nous avons utilisé Javascript.
+   Nous avons utilisé Javascript.
 
 ## How to install
 
