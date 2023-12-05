@@ -9,29 +9,30 @@ The software is presented in the form of a command-line utility and is based on 
 ### French-version
 Ce projet a été créé par l'équipe "Les Experts" constitué de Amine-jabote, sidqui_youssef, Mohaaz45 et Nico6003 Dans le cadre de nos études à l'université de Technologie de Troyes. L'objectif de ce logiciel est de permettre à l'université de gérer de manière plus efficace ses locaux tout en facilitant l'organisation de son personnel, notamment les enseignants et les étudiants.
 
-Le logiciel se présente sous la forme d'un invite de commande et est basé sur les créneaux de cours hebdomadaires, chaque salle étant disponible sous le format CRU (Créneau de Réservation Universitaire). Il offre un ensemble de fonctionnalités adaptées pour chaque type d'utilisateurs.
+Le logiciel se présente sous la forme d'un invite de commande et ce dernier est basé sur les créneaux de cours hebdomadaires, chaque salle étant disponible sous le format CRU (Créneau de Réservation Universitaire). Il offre un ensemble de fonctionnalités adaptées pour chaque type d'utilisateurs.
 
 ## Functionalities for teachers and students
-### English
+### English-version
    - Access to information about rooms and associated classes.
    - Consultation of the room availability calendar.
    - Verification of the maximum seating capacity of rooms.
    - Ability to generate ICalendar format files for class scheduling.
 
-### FR-version
+### French-version
    - Accès aux informations sur les salles et les cours associés.
    - Consultation du calendrier de disponibilité des salles.
-   - Vérification des capacités maximales en nombre de places des salles.
+   - Vérification des capacités maximales des salles en fonction du nombre de places.
    - Possibilité de générer des fichiers au format ICalendar pour la planification des cours.
 
 ## Functionalities for facility managers
-### English
+### English-version
    - Synoptic view of room occupancy rates.
    - Ranking of rooms based on their seating capacity.
    - Assistance in identifying overused and underused rooms for future adjustments.
-### FR-version
+   - 
+### French-version
    - Visualisation synthétique du taux d'occupation des salles.
-   - Classement des salles en fonction de leur capacité d'accueil.
+   - Classement des salles en fonction de leur capacité d'accueil en places.
    - Aide à l'identification des salles surexploitées et sous-exploitées en vue d'aménagements futurs.
      
 ## Technologies used
