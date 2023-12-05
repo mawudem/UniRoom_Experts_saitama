@@ -36,16 +36,23 @@ Le logiciel se présente sous la forme d'un invite de commande et ce dernier est
    - Aide à l'identification des salles surexploitées et sous-exploitées en vue d'aménagements futurs.
      
 ## Technologies used
+### English-version
+   -We are using Javascript.
 
-We are using Javascript.
+### French-version
+   -Nous avons utilisé Javascript.
 
 ## How to install
 
 ### With binaries
-
+### English-version
 To run this program, you simply need to download the right ZIP file in the release section, according to your operating system. Then, you need to extract the ZIP file, and run the executable file.
 
-## Issues
+### French-version
 
+## Issues
+### English-version
 If you encounter any issues, let us know by creating an issue on GitHub.
+
+### French-version
     
