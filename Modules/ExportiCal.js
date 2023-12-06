@@ -14,7 +14,7 @@ class ExportiCal {
 
     //trouve le cours dans la liste des UE
     trouver_cours_dliste(nom) {
-        console.log(this.UE_Liste);
+        //console.log(this.UE_Liste);
         let i = 0;
         while (this.UE_Liste[i].get_identifiant() != nom) {
             i++;
@@ -23,6 +23,7 @@ class ExportiCal {
                 return false;
             }
         }
+        console.log(this.UE_Liste[i]);
         return this.UE_Liste[i];
     }
 
@@ -45,8 +46,8 @@ class ExportiCal {
             console.log("On ajoute le cours : " + mois, jour, titre)
 
             this.cal.createEvent({
-                start: new Date(annee, mois, jour, heure_debut - 1, minute_debut, 0, 0, 0),
-                end: new Date(annee, mois, jour, heure_fin - 1, minute_fin, 0, 0, 0),
+                start: new Date(annee, mois, jour, heure_debut , minute_debut, 0, 0, 0),
+                end: new Date(annee, mois, jour, heure_fin , minute_fin, 0, 0, 0),
                 summary : titre,
                 location: salle,
                 time_zone: 'Europe/London',
@@ -79,20 +80,23 @@ class ExportiCal {
         //Choix de la période d'export
         let debut_exportation_jour = prompt("Enter the begining date of the export period (format DD/MM/YYYY): ");
         let fin_exportation_jour = prompt("Enter the ending date of the export period (format DD/MM/YYYY): ");
-
-
+        console.log(debut_exportation_jour,fin_exportation_jour);
+        console.log(parseInt(debut_exportation_jour.split('/')[2]));
         let debut_date = new Date(
             parseInt(debut_exportation_jour.split('/')[2]),
-            parseInt(debut_exportation_jour.split('/')[1]) - 1,
-            parseInt(debut_exportation_jour.split('/')[0])
+            parseInt(debut_exportation_jour.split('/')[1])-1 ,
+            parseInt(debut_exportation_jour.split('/')[0])+1
         );
 
         let fin_date = new Date(
             parseInt(fin_exportation_jour.split('/')[2]),
-            parseInt(fin_exportation_jour.split('/')[1]) - 1,
-            parseInt(fin_exportation_jour.split('/')[0])
+            parseInt(fin_exportation_jour.split('/')[1])-1,
+            parseInt(fin_exportation_jour.split('/')[0])+1
         );
+
+        console.log(debut_date,fin_date);
         let nb_jours_exportation = Math.round(Math.abs(fin_date - debut_date) / (1000 * 60 * 60 * 24));
+        console.log(nb_jours_exportation);
         for (let i = 0; i < nb_jours_exportation; i++) {
             let jour = new Date(debut_date.getFullYear(), debut_date.getMonth(), debut_date.getDate() + i, 0, 0);
             let cours_du_jour = this.cours_a_exporter;
