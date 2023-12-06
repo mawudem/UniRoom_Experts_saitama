@@ -44,6 +44,25 @@ class Session
         return this.salle_id;
     }
 
+    //test pour le ical
+
+
+    get_h_debut(){
+        return this.h_debut;
+    }
+    get_min_debut(){
+        return this.min_debut;
+    }
+    get_h_fin(){
+        return this.heure_fin;
+    }
+    get_min_fin(){
+        return this.min_fin;
+    }
+    get_sommaire(){
+        return this.sommaire;
+    }
+
 };
 
 module.exports = Session;
