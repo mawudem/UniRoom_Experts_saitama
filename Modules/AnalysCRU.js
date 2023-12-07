@@ -129,7 +129,7 @@ class AnalysCRU {
                 }
             }
         }
-        //return this.UEList;
+        return this.UEList;
     }
 }
 
