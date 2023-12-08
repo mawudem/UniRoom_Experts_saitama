@@ -267,6 +267,7 @@ function menu_Principal()
                         return console.log(err);
                     }
                     console.log("\nJson pour Vega-lite a été generé.ouvre le html");
+                    console.log(objet);
                 });
                 break;
             case "6":
