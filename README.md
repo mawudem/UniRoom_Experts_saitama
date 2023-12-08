@@ -37,10 +37,17 @@ Le logiciel se présente sous la forme d'un invite de commande et ce dernier est
      
 ## Technologies used
 ### English-version
-   We are using Javascript.
+   We are using Javascript and html.
 
 ### French-version
-   Nous avons utilisé Javascript.
+   Nous avons utilisé Javascript et html.
+
+## Test
+### English-version
+We have set up 6 unit tests as follows: UE_spec, trisalle_spec, session_spec, salle_spec, analysSalle_spec, remplirsalle_spec to verify if our functions are working correctly.
+
+### French-version
+Nous avons mis en place 6 tests unitaires qui sont les suivants : UE_spec, trisalle_spec, session_spec, salle_spec, analysSalle_spec, remplirsalle_spec pour vérifier si nos fonctions marchent correctement.
 
 ## How to install
 
