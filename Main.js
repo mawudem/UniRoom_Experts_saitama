@@ -45,28 +45,54 @@ liste_salle = salles.remplirSalles(); //Remplir le tableau de salles
 let R_A = new AnalysSalle(liste_salle); //Analyser les salles
 let calendrier = new iCal(UE_Liste); //Créer un calendrier iCal
 
+
+// Fonction principale pour le menu
 menu_Principal();
 
+//============================ debut lister_Salles====================================
+
+// Fonction pour lister les salles associées à un sujet
 function lister_Salles() {
+    // Demande à l'utilisateur de saisir le sujet pour les salles
     let sujet = prompt("Quel sujet pour les salles voulez-vous trouver? ");
+
+    // Vérifie si le sujet existe dans le document CRU
     while (Document_Cru.search(sujet) == -1) {
+        // Si le sujet n'existe pas, demande à l'utilisateur de réessayer
         const sujet1 = prompt("Le sujet n'existe pas! Veuillez réessayer. Si vous avez une question, veuillez contacter PGC: pgc.sru: ");
         sujet = sujet1;
     }
+
+    // Récupère la partie du document CRU à partir du sujet saisi
     let ceCours = Document_Cru.slice(Document_Cru.search(sujet), Document_Cru.length);
+
+    // Trouve la fin du cours (indiquée par le caractère '+')
     let fin = 0;
     while (!(ceCours.charAt(fin) === '+')) {
         fin++;
     }
+
+    // Coupe la partie du document pour obtenir les détails du cours
     ceCours = ceCours.slice(0, fin);
 
+    // Initialise un tableau pour stocker les salles
     let listeSalles = [];
-    for (let i = 0; i < ceCours.length; i++) {
 
-        if (ceCours[i] === "S" && ceCours[i + 1] === "=") listeSalles.push(ceCours.substring(i + 2, i + 6));
+    // Parcourt la partie du document pour trouver les salles associées
+    for (let i = 0; i < ceCours.length; i++) {
+        // Vérifie si la lettre actuelle est 'S' et la suivante est '='
+        if (ceCours[i] === "S" && ceCours[i + 1] === "=") {
+            // Ajoute la salle à la liste
+            listeSalles.push(ceCours.substring(i + 2, i + 6));
+        }
     }
+
+    // Affiche les salles associées au cours (élimine les doublons)
     console.log("Les salles pour ce cours sont: " + (listeSalles).filter(elim__Doublon));
 }
+
+//============================ fin lister_Salles====================================
+
 
 function Trouver(str, car, num)
 {
