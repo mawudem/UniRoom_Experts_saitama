@@ -16,23 +16,24 @@
   </style>
 </head>
 <body>
+<!-- Nous allons representer les taux d'occupation des salles en utilisant vegalite-->
 <h1>Occupation de chaque classe sur Vega-lite</h1>
 
 <div id="vis"></div>
 
 <script>
-
+// debut du code vegalite qui fait 
   var vlSpec = {
-    $schema: 'https://vega.github.io/schema/vega-lite/v5.json',
+    $schema: 'https://vega.github.io/schema/vega-lite/v5.json', //specifie la version de vegalite a utiliser 
     width: 1000,
-    data: {
+    data: { // recuperer les donnée
       values : 
       [{"Salle":"B007","Occupation":null},{"Salle":"C202","Occupation":null},{"Salle":"C204","Occupation":0},{"Salle":"B103","Occupation":0.96},{"Salle":"B101","Occupation":0.3870967741935484},{"Salle":"B101","Occupation":0.3870967741935484},{"Salle":"A001","Occupation":0.6666666666666666},{"Salle":"A001","Occupation":0.2},{"Salle":"B201","Occupation":1},{"Salle":"P102","Occupation":0.6153846153846154},{"Salle":"S103","Occupation":0.9230769230769231},{"Salle":"EXT1","Occupation":0.048},{"Salle":"EXT1","Occupation":0.004},{"Salle":"C210","Occupation":1},{"Salle":"C205","Occupation":0.9411764705882353},{"Salle":"P201","Occupation":0.6153846153846154},{"Salle":"C203","Occupation":0.8888888888888888},{"Salle":"D206","Occupation":null},{"Salle":"C207","Occupation":0.8},{"Salle":"B106","Occupation":1},{"Salle":"C104","Occupation":0.6666666666666666},{"Salle":"C103","Occupation":0.8333333333333334},{"Salle":"C102","Occupation":0.6666666666666666},{"Salle":"C105","Occupation":0.7105263157894737},{"Salle":"S101","Occupation":1.0416666666666667},{"Salle":"P202","Occupation":0.9230769230769231},{"Salle":"A002","Occupation":0.08333333333333333},{"Salle":"A002","Occupation":0.3472222222222222},{"Salle":"C001","Occupation":0.08333333333333333},{"Salle":"A108","Occupation":null},{"Salle":"S104","Occupation":0.96},{"Salle":"P101","Occupation":0.96},{"Salle":"S102","Occupation":0.9259259259259259},{"Salle":"A105","Occupation":null},{"Salle":"S201","Occupation":1},{"Salle":"S203","Occupation":1},{"Salle":"B209","Occupation":1},{"Salle":"A203","Occupation":null},{"Salle":"C002","Occupation":0.7604166666666666},{"Salle":"A208","Occupation":0.42857142857142855},{"Salle":"P104","Occupation":0.7058823529411765}]
       
     },
-    mark: 'bar',
-    encoding: {
-      x: {
+    mark: 'bar', // defini le type de figure a tracer
+    encoding: { 
+      x: { //coordonnées x 
         //aggregate: 'count',
         "field": "Salle",
         "type": 'nominal',
@@ -40,7 +41,7 @@
           "title": 'Salle'
         }
       },
-      y: {
+      y: { // coordonnées y
         //aggregate: 'count',
         "field": "Occupation",
         "type": "quantitative",
