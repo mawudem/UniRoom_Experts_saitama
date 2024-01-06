@@ -1,6 +1,6 @@
 const UE = require('../objets/UE');
 const Session = require('../objets/Session');
-
+// le test  des fonctionalités de l'EU
 describe("Test d'une UE'", function(){
 	
 	
