@@ -8,10 +8,10 @@ describe('RemplissSalle', function(){
     const sessions = [
       new Session(30, 1, 'Lundi', 8, 0, 0, 10, 'C105', 'Anglais'),
       new Session(25, 1, 'Lundi', 9, 30, 0, 12, 'B208', 'Anglais'),
-    ];
+    ]; //rempli les salles avec les sessions d'UE
 
     const ue = new UE('LE08', sessions); 
-    const listeUE = [ue]; 
+    const listeUE = [ue]; //liste les UE
 
     const remplisseur = new RemplissSalle(listeUE);
 
